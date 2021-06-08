@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A2F4723-1B14-4C32-A712-82C18308D4E9}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LukePonga_Portfolio.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>LukePonga_Portfolio.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\AppIcon.appiconset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\LukePonga_Portfolio\LukePonga_Portfolio.csproj">
+      <Project>{BAE4E78B-A038-4B27-94A3-1A552A5C3A0C}</Project>
+      <Name>LukePonga_Portfolio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\appstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\172.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AppIcon.appiconset\88.png" />
+  </ItemGroup>
+</Project>
